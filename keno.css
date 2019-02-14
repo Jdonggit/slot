@@ -1,0 +1,465 @@
+﻿/*nav----------------------------------------------*/
+
+#nav ul{width:1020px;}
+
+/*keno---------------------------------------------*/
+.gameicon  {top:-10px;left:10px;}
+.keno{ background:#ffffff;margin:20px 0;}
+.kenotop{color:#fff;background:url(../images/keno/kenotop.jpg) no-repeat #360100; height:102px;border:0;margin:0;padding:10px}
+.keno .kenotitle { width:28%; float:left; line-height:30px; display:inline-block;background:url(../images/keno/line.png) no-repeat right center;cursor:pointer;position:relative}
+.keno .kenotitle .kenoname{font-size:23px;line-height: 50px}
+.navlogo{display:block;float:left;height:60px;overflow:hidden;position:relative}
+.navlogo::before{content:'';width:100%;height:0px;background:url(../images/keno/iconbg.png) repeat-x;position:absolute;left:0;right:0;bottom:0 }
+.navlogo img{margin-top:-5px;width:80px}
+.keno .gameinfo {  display:inline-block;border-radius:20px;padding:0 10px;text-align:center;min-width:200px;
+background: #f64d56;
+background: -moz-linear-gradient(top,  #f64d56 0%, #6f050a 48%, #f94b53 100%);
+background: -webkit-linear-gradient(top,  #f64d56 0%,#6f050a 48%,#f94b53 100%);
+background: linear-gradient(to bottom,  #f64d56 0%,#6f050a 48%,#f94b53 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f64d56', endColorstr='#f94b53',GradientType=0 );
+}
+
+
+.mndown{position:absolute;top:20px; right:20px;}
+
+.keno .kenotime{width:22%; background:url(../images/keno/line.png) no-repeat right center;display:inline-block;float:left;text-align:center}
+.kenotime span{background:url(../images/keno/time.jpg) no-repeat;margin:5px;font-size:30px;padding:0 5px;color:#2a374e;line-height:50px;display:inline-block}
+.kenotime p{background:url(../images/keno/timeicon.png) no-repeat 25% top;padding-left:25px;line-height:20px;}
+
+
+.lott_result {width:40%;background:url(../images/keno/line.png) no-repeat right center; display:inline-block;float:left;text-align:center}
+.lott_result .result{ font-size:16px;margin:0px;}
+.lott_result ul{overflow:auto;display:table;margin:0 auto;}
+.lott_result li{background:url(../images/keno/keno_bg.png) no-repeat;text-align:center;width:58px;height:66px;line-height:66px;font-size:40px;color:#2f1503;float:left;}
+.lott_result .mode{font-size:14px;}
+
+.kenofuction{width:10%;float: left;text-align:center}
+/*音量控制*/
+.switch {position: relative;display: inline-block;vertical-align: top; width:75px;height:25px;margin-bottom:10px;padding: 3px;background-color: white;border-radius: 10px;
+  box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);cursor: pointer;
+  background-image: -webkit-linear-gradient(top, #5c0408, #1d0001 25px);background-image: -moz-linear-gradient(top, #5c0408, #1d0001 25px);
+  background-image: -o-linear-gradient(top, #5c0408, #1d0001 25px);background-image: linear-gradient(to bottom, #5c0408,#1d0001 25px);}
+  
+.switch-input {position: absolute; top: 0;left: 0;opacity: 0;}
+.switch-label { position: relative;background:url(/mmc/images/sound_close.png) no-repeat right center ;
+  display: block;height: inherit;font-size: 9px;text-transform: uppercase; border-radius: inherit;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.15s ease-out;  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;transition: 0.15s ease-out;}
+.switch-label:before, .switch-label:after {position: absolute; top: 50%;margin-top: -.5em;line-height: 1;
+  -webkit-transition: inherit;-moz-transition: inherit;-o-transition: inherit;transition: inherit;}
+.switch-label:before {content: attr(data-off);right: 23px;color: #aaa;text-shadow: 0 1px rgba(255, 255, 255, 0.5);}
+.switch-label:after { content: attr(data-on);left:25px;  color: white;text-shadow: 0 1px rgba(0, 0, 0, 0.2);opacity: 0;}
+.switch-input:checked ~ .switch-label {background:url(/mmc/images/sound_on.png) no-repeat  #cd1038;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);}
+.switch-input:checked ~ .switch-label:before {opacity: 0;}
+.switch-input:checked ~ .switch-label:after {opacity: 1;}
+.switch-handle {position: absolute;top: 3px;left: 4px;width: 25px;height: 25px;background: white;
+  border-radius: 15px;box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-linear-gradient(top, white 40%, #f0f0f0); background-image: -moz-linear-gradient(top, white 40%, #f0f0f0);
+  background-image: -o-linear-gradient(top, white 40%, #f0f0f0);background-image: linear-gradient(to bottom, white 40%, #f0f0f0);
+  -webkit-transition: left 0.15s ease-out;-moz-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;transition: left 0.15s ease-out;}
+.switch-input:checked ~ .switch-handle {left: 53px;box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);}
+.switch-green > .switch-input:checked ~ .switch-label {background: #4fb845;}
+
+/*特效控制*/
+
+.switch-inputlight {position: absolute; top: 0;left: 0;opacity: 0;}
+.switch-labellight { position: relative;background:url(/mmc/images/star_off.png) no-repeat right center ;
+  display: block;height: inherit;font-size: 9px;text-transform: uppercase; border-radius: inherit;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.15s ease-out;  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;transition: 0.15s ease-out;}
+.switch-labellight:before, .switch-labellight:after {position: absolute; top: 50%;margin-top: -.5em;line-height: 1;
+  -webkit-transition: inherit;-moz-transition: inherit;-o-transition: inherit;transition: inherit;}
+.switch-labellight:before {content: attr(data-off);right: 23px;color: #aaa;text-shadow: 0 1px rgba(255, 255, 255, 0.5);}
+.switch-labellight:after { content: attr(data-on);left:25px;  color: white;text-shadow: 0 1px rgba(0, 0, 0, 0.2);opacity: 0;}
+.switch-inputlight:checked ~ .switch-labellight {background:url(/mmc/images/star_on.png) no-repeat  #cd1038;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);}
+.switch-inputlight:checked ~ .switch-labellight:before {opacity: 0;}
+.switch-inputlight:checked ~ .switch-labellight:after {opacity: 1;}
+.switch-handlelight {position: absolute;top: 3px;left: 4px;width: 25px;height: 25px;background: white;
+  border-radius: 15px;box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-linear-gradient(top, white 40%, #f0f0f0); background-image: -moz-linear-gradient(top, white 40%, #f0f0f0);
+  background-image: -o-linear-gradient(top, white 40%, #f0f0f0);background-image: linear-gradient(to bottom, white 40%, #f0f0f0);
+  -webkit-transition: left 0.15s ease-out;-moz-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;transition: left 0.15s ease-out;}
+.switch-inputlight:checked ~ .switch-handlelight {left: 53px;box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);}
+.switch-green > .switch-inputlight:checked ~ .switch-labellight {background: #4fb845;}
+
+.keno_L,.keno_R { overflow:auto;font-size:14px;}
+.keno_L {width:32%;height:100%;float:right; }
+.keno_R {width:68%;border-right:1px #ece4c2 solid;margin-left:-1px;float:left;  }
+
+.h8 li{background:url(../images/keno/keno_s.png) no-repeat;width:32px;height:35px;line-height:30px;font-size:25px;margin:5px 0;}
+.klt li{background:url(../images/keno/keno_m.png) no-repeat;width:48px;height:53px;line-height:46px;font-size:28px;}
+.h8 { /*padding:10px;*/}
+.keno  ul.tabs li a{color:#fff}
+ 
+/*下拉選單--------------------------------*/
+.main-menu { color:#FFFFFF; margin:0px; cursor:pointer; display:inline-block; } /* 主選單的樣式 */
+
+.sub-menu {width:290px;color:#fff; background-color:rgba(55,1,1,0.8); padding:0px; list-style-type:none; position:absolute;z-index:999;top:50px;left:-10px } /* 下拉清單的樣式 */
+.sub-menu li { text-align:left; } /* 下拉清單每一列的樣式 */
+.sub-menu li:hover { color:#FFFFFF;}
+.sub-menu a { text-align:left; display:block; text-decoration:none; }
+.sub-menu a:hover {  background:rgba(0,0,0,0.4); text-decoration:none; }
+
+.category{ border-top:0px;}
+.category div {border:1px solid #e4c983;border-bottom:none;margin:auto;}
+.category div.hot > a {position:relative;display:block;line-height:44px;text-align:left;}
+.category div.hot img {top:6px;left:9px;vertical-align:middle;margin:5px 15px;width:50px}
+.category div.group{top:1px; padding-bottom:8px;}
+.category div.group > em {display:block;width:50%;height:30px;line-height:22px;}
+.category div.group > em > a {color:#fff;position:relative;}
+.category div.hot i {font-size:18px;margin-right:10px;position:relative;}
+.category div.group > span{position:absolute;top:10px;left:12px;padding:2px;}
+.category div.group.nav_1{width:230px;height:50px;position:relative;float:left;}
+
+.group h2{color:#463c29;text-align: center; background: #ffe096;line-height:40px;
+    background: -moz-linear-gradient(top, #ffe096 0%, #ad8841 100%);
+    background: -webkit-linear-gradient(top, #ffe096 0%,#ad8841 100%);
+    background: linear-gradient(to bottom, #ffe096 0%,#ad8841 100%);} 
+
+/*TAB------------------------*/
+
+.page .abgne_tab {clear: both; background:#fff;}
+
+.page .tab_content{padding:10px 15px;line-height:22px;width:auto;margin:0px;float:none;list-style:circle;position:inherit;display:block;}
+.betlist{margin-top:-10;padding:0 15px;}
+.page .abgne_tab .next,.page .abgne_tab .pre{width:35px;height:35px;display:block;position:absolute;top:0;z-index:99;}
+
+.tabs_container{width:100%;overflow:hidden;position:relative;left:0;top:0;color:#fff;}
+.tabs_container{width:100%;overflow:hidden;position:relative;left:0;top:0;color:#fff;}
+/*.tabs_container  ul.tabs{background:none;}*/
+.keno .abgne_tab .next {background: url(../images/er_R2.png) center no-repeat #2a374e;right:0;}
+.keno .abgne_tab .pre {background:url(../images/er_L2.png) center no-repeat #2a374e;left:0}
+.keno .tabs_container ul.tabs li a{ color:#fff}
+.keno .tabs_container ul.tabs li.active a{ color:#333;background: url(../images/tabnav.jpg);line-height: 35px;
+  border-top:0}
+.keno .tabs_container .tabs,.keno .tabs_container {width:100%;overflow:hidden;position:relative; 
+background: #f64d56;
+background: -moz-linear-gradient(top,  #f64d56 0%, #6f050a 48%, #f94b53 100%);
+background: -webkit-linear-gradient(top,  #f64d56 0%,#6f050a 48%,#f94b53 100%);
+background: linear-gradient(to bottom,  #f64d56 0%,#6f050a 48%,#f94b53 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f64d56', endColorstr='#f94b53',GradientType=0 );
+}
+.keno_L ul.tabs li a{  color:#555555;  }
+.keno .tabs_container  ul.tabs li:hover {background:rgba(0,0,0,0.4);}
+
+
+.history_prize li{float:left;background:#ec4d4f;color:#fff;border-radius: 50%;width:20px; line-height:20px;text-align:center;margin-right:2px;}
+
+/*彩種選擇*/
+
+.gamemenu{position:absolute;width:51px;height:140px;left:-50px;top:50px;cursor:pointer;}
+.gamemenu_box{background:#FFF; position:absolute;width:300px; display:none;left:50px;top:0px; padding:0 15px;z-index:999;border:#fc5964 2px solid;box-shadow:1px 1px 8px rgba(20%,20%,40%,0.6); cursor:auto}
+.gamemenu_box_click{ display:block;filter:alpha(opacity=100);-moz-opacity:1;opacity:1; -khtml-opacity: 1;}
+/*.gamemenu:hover .gamemenu_box{ display:block;filter:alpha(opacity=100);-moz-opacity:1;opacity:1; -khtml-opacity: 1;}*/
+.gamemenu_list{border-bottom:#ddd 1px dashed;padding:10px 0;}
+.gamemenu_list span{ width:80px; float:left;color:#fc5964;font-size:18px;line-height:30px; }
+.gamemenu_list ul{margin-left:90px; }
+.gamemenu_list a{display:inline-block;padding:3px 5px;width:90px;margin:0 0 2px 5px ;font-size:14px;}
+.gamemenu_list a:hover{background:#fc5964;color:#fff; }
+/*右侧*/
+.keno_R .method span{ font-weight:bold}
+.keno_R .method .ex{ margin:0 12px 0 3px;line-height:25px;padding:2px 3px;text-align:center; }
+#radio{margin-left:15px;height:12px;border:none;margin-right:0;  }
+.keno_R .enterList{width:99%;border:#d2d2d2 1px solid;background:#f9f9f9;-webkit-appearance: none;  -moz-appearance: none;height:200px;  }
+
+/*数字按钮 */
+.numbers { display:block; margin-top:10px ;clear:both; overflow:hidden;}
+.name{ width: 72px;text-align: center; float: left; color:#2d2013;font-size:18px;padding:5px 10px; margin:2px 5px 0 0;position:relative ;
+border-top:1px solid #e0be74;border-bottom:1px solid #e3c587;background: #ffe096;
+background: -moz-linear-gradient(top, #ffe096 0%, #ad8841 100%);
+background: -webkit-linear-gradient(top, #ffe096 0%,#ad8841 100%);
+background: linear-gradient(to bottom, #ffe096 0%,#ad8841 100%);
+border-radius:6px;}
+.name::before,.name::after,.add::before,.add::after{content:'';/*background:url(../images/keno/name.png) no-repeat;*/width:1px;height:34px;position:absolute ;top:0}
+.name::before,.add::before{left:0}.name::after,.add::after{right:0}
+.name0{text-align: center; float: left; background:#e50a56 ;color:#fff;font-size:18px;padding:5px 10px; margin:2px 5px 0 0;position:relative }
+.name .rate,.name0 .rate{position:absolute;bottom:-18px;left:0}
+.name .rate{position:absolute;bottom:-18px;left:0}
+
+/*11選5数字按钮 */
+.name11{ font-size:16px;padding:5px;width: 64px;}
+.numList { float: left; }
+.numList li{ float: left; background:url(../images/keno/btn.png) no-repeat center top;width:41px;height:53px; margin:0;line-height:42px;text-align:center;color:#4a4a4a;font-size:24px;font-weight:bold;cursor: pointer;}
+ 
+.numList li:hover{background:url(../images/keno/btn_a.png) no-repeat center top;color:#2f1503; }
+.numList .selected,.numList  .selected:hover  {background:url(../images/keno/btn_h.png) no-repeat center top;color:#fff;}
+ 
+.rate {display: block;color:#999;font-size:10px; text-align:center;width:100%;line-height:12px;}
+.list_s{max-width:580px;}
+.list_s li{background:url(../images/keno/btn_s.png) no-repeat;width:29px;height:29px;font-size:18px;line-height:28px;margin:0px; margin-bottom:10px;}
+.list_s li:hover{background:url(../images/keno/btn_s_a.png) no-repeat; }
+.list_s .selected ,.list_s .selected:hover  {background:url(../images/keno/btn_s_h.png) no-repeat }
+
+.btnList {float: right; width:90px;}
+.btnType { display:inline-block;vertical-align:middle;margin-left:5px;}
+.btnList li,.btnType li {  width:23px;height:23px; float: left; cursor: pointer;border:#c8b474 solid 1px; text-align:center;margin-left:2px;margin-bottom:2px;
+border-radius:6px;background: #dbd3d3;
+background: -moz-linear-gradient(top,  #ffffff 0%, #dbd3d3 100%);
+background: -webkit-linear-gradient(top,  #ffffff 0%,#dbd3d3 100%);
+background: linear-gradient(to bottom,  #ffffff 0%,#dbd3d3 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbd3d3',GradientType=0 );
+}
+
+.btnList .selected,.btnList li:hover,.btnType .selected,.btnType li:hover
+,.marksixpage .sixbtn:hover
+{background: #fdf2c1;
+background: -moz-linear-gradient(top,  #fdf2c1 0%, #e2c283 100%);
+background: -webkit-linear-gradient(top,  #fdf2c1 0%,#e2c283 100%);
+background: linear-gradient(to bottom,  #fdf2c1 0%,#e2c283 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdf2c1', endColorstr='#e2c283',GradientType=0 );
+
+}
+.btnChoose{ overflow:hidden }
+.btnChoose .selected,.btnChoose li:hover{background:#ffcd00;color:#333;border:#fff solid 1px;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa5466', endColorstr='#fa5466',GradientType=0 );}
+.btnChoose li  {float:left; min-width:50px;line-height:25px;margin-right:10px;text-align: center;
+    border: 1px solid #CCC;padding:5px 10px;
+    background: #dbd3d3;
+    color: #555555;
+    background: -moz-linear-gradient(top, #ffffff 0%, #dbd3d3 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%,#dbd3d3 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#dbd3d3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbd3d3',GradientType=0 );}
+.list_s{ margin:5px 0;}
+.btnList li,.btnType li, .btnChoose li{ 
+    cursor: pointer;}
+	
+/*选择列 */
+.option{margin-top:10px;}
+.option span{font-weight:bold;}
+.switch_options span{display: inline-block;float: left;padding:0 7px;margin: 0;cursor: pointer;font-size: 12px;	font-weight: 700;border: 1px solid #bbb;text-transform: uppercase;background: #eee;  }
+.switch_options span:first-of-type{border-radius:10px 0 0 10px;border-right: 0;}
+.switch_options span:last-of-type{border-radius: 0 10px 10px 0;border-left: 0;}
+.switch_options span:hover{background: #ddd;color:#ff4646}     .switch_options span.selected{background: #e50a56;color:#FFF }
+.switch_options input{ margin:0;border-radius: 0px; }
+.rating span{ font-size:16px;font-weight:100; }
+
+.btn_s {float:right;border-radius:6px;display: block;margin:2px 5px; line-height:28px;width:80px;display:inline-block;text-align:center;}
+.add{border-top:1px solid #e0be74;border-bottom:1px solid #e3c587;position:relative;overflow:hidden;
+background: #ff4646;
+background: -moz-linear-gradient(top,  #ff4646 0%, #9c2228 100%);
+background: -webkit-linear-gradient(top,  #ff4646 0%,#9c2228 100%);
+background: linear-gradient(to bottom,  #ff4646 0%,#9c2228 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4646', endColorstr='#9c2228',GradientType=0 );
+}
+ 
+
+.add:hover{background: #9c2228;color:#fff;
+background: -moz-linear-gradient(top,  #9c2228 0%, #ff4646 100%);
+background: -webkit-linear-gradient(top,  #9c2228 0%,#ff4646 100%);
+background: linear-gradient(to bottom,  #9c2228 0%,#ff4646 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9c2228', endColorstr='#ff4646',GradientType=0 );
+}
+.rechoose{border:1px solid #CCC;background: #dbd3d3;color:#555555;
+background: -moz-linear-gradient(top,  #ffffff 0%, #dbd3d3 100%);
+background: -webkit-linear-gradient(top,  #ffffff 0%,#dbd3d3 100%);
+background: linear-gradient(to bottom,  #ffffff 0%,#dbd3d3 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbd3d3',GradientType=0 );
+}
+.rechoose:hover{
+background: -moz-linear-gradient(top,  #dbd3d3 0%, #ffffff 100%);
+background: -webkit-linear-gradient(top,  #dbd3d3 0%,#ffffff 100%);
+background: linear-gradient(to bottom,  #dbd3d3 0%,#ffffff 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbd3d3', endColorstr='#ffffff',GradientType=0 );
+}
+
+
+.betting{display: block;margin:3px 6px;text-align:center;
+background:linear-gradient(top,#fb6319,#ff9e15);
+background:-moz-linear-gradient(top,#fb6319,#ff9e15);
+background:-webkit-linear-gradient(top,#fb6319,#ff9e15);
+background:-ms-linear-gradient(top,#fb6319,#ff9e15);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9e15', endColorstr='#fb6319',GradientType=0 );}
+.betting:hover {color:#fff;background:linear-gradient(top,#ff518e,#8a0b37);
+background:-moz-linear-gradient(top,#ff9e15,#fb6319);
+background:-webkit-linear-gradient(top,#ff9e15,#fb6319);
+background:-ms-linear-gradient(top,#ff9e15,#fb6319);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb6319', endColorstr='#ff9e15',GradientType=0 );}
+
+
+#ratioSel{ border:#d2d2d2 1px solid; color:#b6062e;line-height:23px;/*background: url(../images/dropdown.png) no-repeat 93% center #f9f9f9;*/
+     -webkit-appearance: none;  -moz-appearance: none;  /*Removes default chrome and safari style*/}
+#textfield6{ border:#d2d2d2 1px solid; line-height:20px;width:50px;height:22px;}
+.textfield6{ border:#d2d2d2 1px solid; line-height:20px;width:50px;height:22px;}
+
+/*投注明细*/
+.betlist{padding: 15px;background:#f3f3f3;clear:both;border-top:solid 1px #ece4c2;overflow:hidden}
+.betlist .keno_R{border:0}
+.betlist table {background:#fff;border:#bfbfbf 1px solid;padding:3px;}
+.betlist tr {background:#f5f5f5; }
+.betlist td { border-right:#fff 1px solid;border-bottom:#fff 1px solid;color:#333;line-height:25px;}
+.betlist tr:hover td { color:#fff}
+.betlist tr:nth-child(even){background:#fff;}
+.betlist tr:hover {background:#e84e50;color:#fff}
+
+.betlist p { margin-right:10px;display:inline;line-height:40px; }
+.bet-total span {font-size:18px;   font-weight: bold;padding-left:25px; display:inline-block}
+.bet-total{text-align:center}
+ 
+.betlist .list_cursor{cursor:pointer;font-size:26px;}
+.total{font-size:24px;   font-weight: bold;}
+.betlist  .btn_chase ,.betlist  .btn_hemai,.betlist  .btn_clear{display:inline-block;margin:5px;text-align:center;color:#463c29;width:138px;line-height:42px;background: url(../images/keno/btn_1.jpg) no-repeat  ;}
+.betlist .btn_chase:hover,.betlist .btn_hemai:hover,.betlist .btn_clear:hover{background: url(../images/keno/btn_1h.jpg) no-repeat ;}
+.betlist  .btn_chase span{background: url(../images/keno/icon_chase.png) no-repeat left center ;}
+.betlist  .btn_hemai span{background: url(../images/keno/icon_hemai.png) no-repeat left center ;}
+.betlist  .btn_check span{background: url(../images/keno/icon_check.png) no-repeat left center ;}
+.betlist  .btn_clear span{background: url(../images/keno/icon_clear.png) no-repeat left center ;}
+
+.betlist  .btn_check{margin:5px;display:inline-block;text-align:center;color:#fff;width:289px;line-height:42px;background: url(../images/keno/btn_2.jpg) no-repeat  ;}
+
+.betlist  .btn_check:hover{background: url(../images/keno/btn_2h.jpg) no-repeat ;}
+
+
+.betfun {width:100%;float:right;}
+/*追号*/
+.chase{padding:15px;margin-top:0px; }
+.chase table{border:#bfbfbf 1px solid;padding:3px;}
+.chase .page_tb{max-height:345px;overflow-x: hidden;margin:10px 0;color:#333;}
+.chase .page_tb .checkbox{ width:15px;float:left;margin:0 15px;}
+.chase .checkbox,.pos2input,.poschk{width:15px;  height:13px; margin:5px; }
+.chase  input{ margin:0 5px;}
+
+ /*赛车*/
+.pk10 .keno_L {width:390px; }
+.pk10 .keno_R {width:630px; }
+.pk10 .betlist .keno_L {width:32%;}
+.pk10 .betlist .keno_R {width:68%;}
+.pk10 .lott_result {padding:0;width:42%} 
+.pk10 .kenotime {width:20%;}
+.pk10 .lott_result img{display:block}
+.pk10 .pagetitle  {  width:260px; }
+.pk10 .tab_content{padding:10px;}
+.pk10 .numList li{ width:41px;height:1px;padding-top:39px;font-weight:bold;margin:0;cursor: pointer;padding-left:3px;}
+.pk10 .numList .btn1{background:url(../images/keno/btn1.png) no-repeat; }
+.pk10 .numList .btn2 {background:url(../images/keno/btn2.png) no-repeat; }
+.pk10 .numList .btn3{background:url(../images/keno/btn3.png) no-repeat; }
+.pk10 .numList .btn4{background:url(../images/keno/btn4.png) no-repeat; }
+.pk10 .numList .btn5{background:url(../images/keno/btn5.png) no-repeat; }
+.pk10 .numList .btn6{background:url(../images/keno/btn6.png) no-repeat; }
+.pk10 .numList .btn7 {background:url(../images/keno/btn7.png) no-repeat; }
+.pk10 .numList .btn8{background:url(../images/keno/btn8.png) no-repeat; }
+.pk10 .numList .btn9{background:url(../images/keno/btn9.png) no-repeat; }
+.pk10 .numList .btn10{background:url(../images/keno/btn10.png) no-repeat; }
+.pk10 .numList li:hover{background-position:0 -39px;-webkit-transition:all 0s ease-in-out; -moz-transition:all 0s ease-in-out;	-o-transition:all 0s ease-in-out;transition:all 0s ease-in-out;}
+.pk10 .numList .selected,.pk10 .numList .selected:hover {background-position:0 -78px;}
+.pk10 .name{padding:5px 0;}
+.pk10 .lott_result ul{overflow:hidden;padding-top:10px;}
+.pk10 .lott_result li{background: none;width:40px;height:48px;position:relative;}
+.pk10 .slot_st div{width:40px;height:48px;}
+
+ /*農場*/
+.lkf .keno_L {width:390px; }
+.lkf .keno_R {width:630px; }
+.lkf .betlist .keno_L {width:32%;}
+.lkf .betlist .keno_R {width:68%;}
+.lkf .lott_result{padding:0} 
+
+.wh{color:#fff}
+.marksixpage  .sixtb input{height:auto} 
+.marksixpage .sixbtn{background:#666;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666', endColorstr='#6d6762',GradientType=0 );
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #666), color-stop(100%, #6d6762));
+ background: -moz-linear-gradient(top, #666, #6d6762);background: -ms-linear-gradient(top, #666, #6d6762);
+ border: none;cursor:pointer;   outline: none;line-height:20px;
+-moz-border-radius: 6px;-webkit-border-radius: 6px;border-radius: 6px;color:#fff; }
+
+.wh{color:#fff}
+.marksixpage  .sixtb input{height:auto} 
+ .marksixpage .sixbtn{background: #dbd3d3;color:#333;border: none;cursor:pointer;   outline: none;line-height:20px;
+-moz-border-radius: 6px;-webkit-border-radius: 6px;border-radius: 6px; margin-right:5px}
+
+ /*全清*/
+.choose{border-top: #ddd 1px dashed;margin-top:10px;padding-top:5px;}
+.choose .position_checkbox{margin-right:10px;}
+.choose .position_checkbox input{height:auto;margin-right: 3px;  margin-left: 10px;border: none; outline: medium none;}
+
+
+ /*六合彩*/
+.marksixpage  .kenotop{height:150px} 
+.marksixpage  .kenotime{width:100%;text-align: left;margin-top:10px}
+.marksixpage  .kenotime p{width:40px;background-position:left;font-size:14px;display: inline-block;vertical-align:top}
+.marksixpage .kenotime span{margin-top:0 }
+
+.marksixpage .lott_result{overflow:inherit; width:60%; }
+.marksixpage .lott_result ul {overflow:visible;text-align:center;margin-top: 5px;} 
+.marksixpage  ul.specialNum{ width:20%;float:left; } 
+.marksixpage .lott_result li{width:64px; height: 73px; line-height:65px;font-size: 36px ;position:relative;background:none}
+.marksixpage .lott_result i{color:#ffe8b8;font-size:14px;display:block;position:absolute;bottom:-40px;left:38%;font-style:normal;}
+.marksixpage .lott_result li ul{height:73px;width:64px;overflow:hidden}
+.marksixpage .lott_result li ul li{ margin:0;}
+.marksixpage .lott_result li.plus{background:none;color:#ffe8b8;width:20px; }
+.marksixpage .lott_result .six_b li{background: url(../images/keno/six_b.png) no-repeat center;}
+.marksixpage .lott_result .six_r li{background: url(../images/keno/six_r.png) no-repeat center;}
+.marksixpage .lott_result .six_g li{background: url(../images/keno/six_g.png) no-repeat center;}
+
+.marksixpage .history_prize li.te{color:#ffe8b8; border: 1px #ffe8b8 solid;margin-left:5px;}
+.sixtop{background: url(../images/keno/er.png) no-repeat 5px center #ec4d4f;line-height: 25px;padding-left: 20px;display: block;margin: 5px 0;color:#fff}
+
+.marksixpage .tdcol_4 li{width:25%;}
+.marksixpage .tdcol_5 li{width:20%;text-align:right}
+
+.marksixpage .name{  width: 43px; font-size: 14px; overflow:hidden;   padding:3px ;    margin: 0 3px 0 0;color:#333;}
+.marksixpage .sixList li { float: left; margin: 5px 0;}
+.marksixpage  .six_1{ width: 50px;line-height: 20px;margin-right:5px;}
+.marksixpage  .six_2 {  width:30px; line-height: 20px; margin-right:5px;}
+.marksixpage .six_3 { width: 60px; line-height: 20px;margin-right:0;}
+
+.marksixpage  .last{ margin-right: 0px;}
+.marksixpage .fl{width:50px;display: inline-block;    text-align: center;}
+.marksixpage .tdcol_5 .fl{width: 35px;}
+
+.marksixpage .sixtb { margin:5px 0}
+ 
+.marksixpage .sixtb td{padding:3px 0;border-right:#FFF 1px solid;border-bottom:#FFF 1px solid;}
+.marksixpage .sixtb{text-align:center; }
+.marksixpage .sixtb  td.active{background: #f5e8ca;}
+.marksixpage .sixtb  td.active .six_s{background-position:0 -30px; }
+.marksixpage .sixtb .top{ background:#f5e8ca !important;color:#333}
+.marksixpage .sixtb2 td{border-right:#eee 1px solid; font-size:13px; }
+.marksixpage .sixtb2 .six_2{ margin:2px 0; height:20px;}
+.marksixpage .sixtb2 .odd{background:#f9f9f9;}
+.marksixpage .sixtb2 p{line-height: 25px;}
+ .marksixpage .sixtb2 .name{width:45px;line-height:50px}
+ 
+.marksixpage .w7{margin:10px 0;font-size:18px;}
+.marksixpage .w9{color:#ffe8b8}
+.six_s{color:#160e0b;font-weight:bold;line-height:30px;width:30px;display:block;text-align:center;float:left}
+.sixR{background:url(../images/keno/six_sr.png) no-repeat;}
+.sixG{background:url(../images/keno/six_sg.png) no-repeat; }
+.sixB{background:url(../images/keno/six_sb.png) no-repeat; }
+
+.sixnum li{float:left;margin:3px;font-weight:bold;text-align:center;background:#e5e5e5;line-height:25px;color:#545454;padding:0 4px;}
+
+.marksixpage .sebo .name{margin-right:20px;padding:3px 8px;}
+.marksixpage .sebo li { width: 33%;margin:3px 0;}
+.marksixpage .sebo_R{color:#fff;background:#a00404;}  .marksixpage .sebo_B{color:#fff;background:#053a9a;}  .marksixpage .sebo_G{color:#fff;background:#3eab00;}
+.marksixpage .sebo_O{color:#fff;background:#ee7700}
+.blue{color:#00a0e9} .green{color:#65bd34}.red{color:#eb1908}
+.marksixpage input[type="radio"]{ margin-left: 5px;height: 12px;border: none;margin-right:0;}
+.marksixpage .sixtb2 td.firsttd{border-right:none; }
+.marksixpage .rateflow{font-weight: bold; color: #fe4e50}
+.marksixpage .rate_red{font-weight: bold; color: #ff0000}
+.marksixpage .rate_green{font-weight: bold; color: #65bd34}
+.ballbet td{cursor:pointer;}
+
+/*六合彩当前位置*/
+.Smalltab{line-height:25px;margin:5px auto ;overflow:auto}
+.Lstab_title{width: 65px;float:left;font-weight: bold;}
+.Lstabs{float:left;width:auto;display:block}
+.Lstabs li{ float:left;margin-right:5px;border:1px solid #ddd;padding:0 5px;cursor: pointer;-moz-border-radius: 6px;-webkit-border-radius: 6px;border-radius: 6px;
+background: #dbd3d3;
+    background: -moz-linear-gradient(top, #ffffff 0%, #dbd3d3 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%,#dbd3d3 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#dbd3d3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbd3d3',GradientType=0 );}
+.Smalltab .active,.Smalltab li.active:hover{background:#ec4d4f;color:#fff;border:1px solid transparent;}
+.Lstabs li:hover{    background: #ddd;border:1px solid #ec4d4f;}
+
+.randomone{margin-right: 18px;padding-top: 10px;}
+
+

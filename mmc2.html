@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>mmc</title>
+<link href="mmc_style.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="mmc_wrapper">
+<!--mmc-->
+    <div class="mmc">
+    <!--開講頭-->
+      <div class="header">
+            <div id="box">
+                    <ul class="inbox">
+                      <li><img src="images/mmc_0.png"></li>
+                      <li><img src="images/mmc_1.png"></li>
+                    </ul>
+                    <ul class="inbox">
+                      <li><img src="images/mmc_0.png"></li>
+                    </ul>
+                    <ul class="inbox">
+                      <li><img src="images/mmc_0.png"></li>
+                    </ul>
+                    <ul class="inbox">
+                      <li><img src="images/mmc_0.png"></li>
+                    </ul>
+                    <ul class="inbox">
+                      <li><img src="images/mmc_0.png"></li>
+                    </ul>
+              </div>
+              <label class="switch" style="float:left;margin-top: 97px;margin-left: 30px;"><!--音樂開關-->
+                <input type="checkbox" class="switch-input">
+                <span class="switch-label" data-on="On" data-off="Off"></span>
+                <span class="switch-handle"></span>
+            </label>
+        </div>
+        <!--開講頭end-->
+      <div class="mmc_tab"><!--選號區-->
+          <div class="tabs_container">
+                    <a class="pre" style="display: none;"> </a>
+                    <ul class="tabs">
+                        <li><a id="three_behind" href="#three_behind_play">三星</a></li>
+                        <li><a id="two_front" href="#two_front_play">前二</a></li>
+                        <li><a id="two_behind" href="#two_behind_play">后二</a></li>
+                        <li><a id="one" href="#one_play">一星</a></li>
+                        <li><a id="noset" href="#noset_play">不定位</a></li>
+                        <li><a id="bseo" href="#bseo_play">大小单双</a></li>
+                    </ul>
+                    <a class="next" style="display: none;"> </a>
+            </div>
+            
+            <div class="keno_R"><!--玩法-->
+			<div class="tab_container">
+					
+				<div id="three_behind_play" class="tab_content" style="display: block;">
+                <div class="bg_red">
+                        <p class="method">
+                            <img id="three_behind_help" src="images/qa.png" class="left" title="从百位丶十位丶个位中选择一个3位数号码组成一注，所选号码与开奖号码后3位相同，且顺序一致，即为中奖。">
+                            <span id="three_behind_example" class="ex" title="投注方案：345；开奖号码：345，即中后三直选。">示例</span>
+                            <font id="three_behind_desc">从个丶十丶百位各选一个号码组成一注。</font>
+                        </p>
+                        <p class="method">
+                            <span>  三星直选 </span>
+                            <input type="radio" class="smalllabel" id="three_behind_set" name="three_behind_ball" checked="checked"><label for="three_behind_set">直选复式</label>
+                            <input type="radio" class="smalllabel" id="three_behind_enter" name="three_behind_ball"><label for="three_behind_enter">直选单式</label>
+                            <input type="radio" class="smalllabel" id="three_behind_sum" name="three_behind_ball"><label for="three_behind_sum">直选和值</label>
+                        </p>
+                        <p class="method"><span> 三星组选</span>
+                            <input type="radio" class="smalllabel" id="three_behind_com_3" name="three_behind_ball"><label for="three_behind_com_3">组三复式</label>
+                            <input type="radio" class="smalllabel" id="three_behind_com_3_enter" name="three_behind_ball"><label for="three_behind_com_3_enter">组三单式</label>
+                            <input type="radio" class="smalllabel" id="three_behind_com_6" name="three_behind_ball"><label for="three_behind_com_6">组六复式</label>
+                            <input type="radio" class="smalllabel" id="three_behind_com_6_enter" name="three_behind_ball"><label for="three_behind_com_6_enter">组六单式</label>
+                            <input type="radio" class="smalllabel" id="three_behind_com_mix" name="three_behind_ball"><label for="three_behind_com_mix">混合组选</label>
+                            <input type="radio" class="smalllabel" id="three_behind_com_sum" name="three_behind_ball"><label for="three_behind_com_sum">组选和值</label>
+                        </p>
+                 </div>
+					<div id="three_behind_play_ball" class="bg_red"><div class="ballDiv"><div class="numbers"><span class="name radius">百位</span><ul class="numList width70"><li class="selected"><b>0</b><span class="rate ana_0_0">1</span></li><li><b>1</b><span class="rate ana_0_1">1</span></li><li><b>2</b><span class="rate ana_0_2">1</span></li><li><b>3</b><span class="rate ana_0_3">1</span></li><li><b>4</b><span class="rate ana_0_4">1</span></li><li><b>5</b><span class="rate ana_0_5">1</span></li><li><b>6</b><span class="rate ana_0_6">1</span></li><li><b>7</b><span class="rate ana_0_7">1</span></li><li><b>8</b><span class="rate ana_0_8">1</span></li><li><b>9</b><span class="rate ana_0_9">0</span></li></ul><ul class="btnList"><li class="fun_all">全</li><li class="fun_big">大</li><li class="fun_small">小</li><li class="fun_odd">奇</li><li class="fun_even">偶</li><li class="fun_clear">清</li></ul></div><div class="numbers"><span class="name radius">十位</span><ul class="numList width70"><li><b>0</b><span class="rate ana_1_0">1</span></li><li><b>1</b><span class="rate ana_1_1">1</span></li><li><b>2</b><span class="rate ana_1_2">1</span></li><li><b>3</b><span class="rate ana_1_3">1</span></li><li><b>4</b><span class="rate ana_1_4">1</span></li><li><b>5</b><span class="rate ana_1_5">1</span></li><li><b>6</b><span class="rate ana_1_6">1</span></li><li><b>7</b><span class="rate ana_1_7">1</span></li><li><b>8</b><span class="rate ana_1_8">1</span></li><li><b>9</b><span class="rate ana_1_9">0</span></li></ul><ul class="btnList"><li class="fun_all">全</li><li class="fun_big">大</li><li class="fun_small">小</li><li class="fun_odd">奇</li><li class="fun_even">偶</li><li class="fun_clear">清</li></ul></div><div class="numbers"><span class="name radius">个位</span><ul class="numList width70"><li><b>0</b><span class="rate ana_2_0">1</span></li><li><b>1</b><span class="rate ana_2_1">1</span></li><li><b>2</b><span class="rate ana_2_2">1</span></li><li><b>3</b><span class="rate ana_2_3">1</span></li><li><b>4</b><span class="rate ana_2_4">1</span></li><li><b>5</b><span class="rate ana_2_5">1</span></li><li><b>6</b><span class="rate ana_2_6">1</span></li><li><b>7</b><span class="rate ana_2_7">1</span></li><li><b>8</b><span class="rate ana_2_8">1</span></li><li><b>9</b><span class="rate ana_2_9">0</span></li></ul><ul class="btnList"><li class="fun_all">全</li><li class="fun_big">大</li><li class="fun_small">小</li><li class="fun_odd">奇</li><li class="fun_even">偶</li><li class="fun_clear">清</li></ul></div></div></div>
+				</div>
+
+				<div id="two_front_play" class="tab_content" style="display: none;">
+					<p class="method">
+						<img id="two_front_help" src="../rs/v1_zc_zhcn/images/qa.png" class="left" title="从百位丶十位中选择一个2位数号码组成一注，所选号码与开奖号码的前2位相同，且顺序一致，即为中奖。">
+						<span id="two_front_example" class="ex" title="投注方案：58；开奖号码前二位：58，即中前二直选。">示例</span>
+						<font id="two_front_desc">从百位和十位上至少各选1个号码。</font>
+					</p>
+					<p class="method">
+					<span>  前二直选 </span>
+						<input type="radio" class="smalllabel" id="two_front_set" name="two_front_ball" checked="checked"><label for="two_front_set">直选复式</label>
+						<input type="radio" class="smalllabel" id="two_front_enter" name="two_front_ball"><label for="two_front_enter">直选单式</label>
+					</p>
+					<p class="method"><span> 前二组选</span>
+						<input type="radio" class="smalllabel" id="two_front_com" name="two_front_ball"><label for="two_front_com">组选复式</label>
+						<input type="radio" class="smalllabel" id="two_front_com_enter" name="two_front_ball"><label for="two_front_com_enter">组选单式</label>
+					</p>
+					<div class="line"></div>
+					<div id="two_front_play_ball"><div class="ballDiv"><div class="numbers"><span class="name radius">百位</span><ul class="numList width70"><li><b>0</b><span class="rate ana_0_0">1</span></li><li><b>1</b><span class="rate ana_0_1">1</span></li><li><b>2</b><span class="rate ana_0_2">1</span></li><li><b>3</b><span class="rate ana_0_3">1</span></li><li class=""><b>4</b><span class="rate ana_0_4">1</span></li><li class=""><b>5</b><span class="rate ana_0_5">1</span></li><li class=""><b>6</b><span class="rate ana_0_6">1</span></li><li><b>7</b><span class="rate ana_0_7">1</span></li><li class=""><b>8</b><span class="rate ana_0_8">1</span></li><li class=""><b>9</b><span class="rate ana_0_9">0</span></li></ul><ul class="btnList"><li class="fun_all">全</li><li class="fun_big">大</li><li class="fun_small">小</li><li class="fun_odd">奇</li><li class="fun_even">偶</li><li class="fun_clear">清</li><li class="fun_all">全</li><li class="fun_big">大</li><li class="fun_small">小</li><li class="fun_odd">奇</li><li class="fun_even">偶</li><li class="fun_clear">清</li></ul></div><div class="numbers"><span class="name radius">十位</span><ul class="numList width70"><li><b>0</b><span class="rate ana_1_0">1</span></li><li><b>1</b><span class="rate ana_1_1">1</span></li><li><b>2</b><span class="rate ana_1_2">1</span></li><li><b>3</b><span class="rate ana_1_3">1</span></li><li><b>4</b><span class="rate ana_1_4">1</span></li><li><b>5</b><span class="rate ana_1_5">1</span></li><li><b>6</b><span class="rate ana_1_6">1</span></li><li><b>7</b><span class="rate ana_1_7">1</span></li><li><b>8</b><span class="rate ana_1_8">1</span></li><li><b>9</b><span class="rate ana_1_9">0</span></li></ul><ul class="btnList"><li class="fun_all">全</li><li class="fun_big">大</li><li class="fun_small">小</li><li class="fun_odd">奇</li><li class="fun_even">偶</li><li class="fun_clear">清</li><li class="fun_all">全</li><li class="fun_big">大</li><li class="fun_small">小</li><li class="fun_odd">奇</li><li class="fun_even">偶</li><li class="fun_clear">清</li></ul></div></div></div>
+				</div>
+
+				<div id="two_behind_play" class="tab_content" style="display: none;">
+					<p class="method">
+						<img id="two_behind_help" src="../rs/v1_zc_zhcn/images/qa.png" class="left" title="">
+						<span id="two_behind_example" class="ex" title="">示例</span>
+						<font id="two_behind_desc"></font>
+					</p>
+					<p class="method">
+					<span>  后二直选 </span>
+						<input type="radio" class="smalllabel" id="two_behind_set" name="two_behind_ball"><label for="two_behind_set">直选复式</label>
+						<input type="radio" class="smalllabel" id="two_behind_enter" name="two_behind_ball"><label for="two_behind_enter">直选单式</label>
+					</p>
+					<p class="method"><span> 后二组选</span>
+						<input type="radio" class="smalllabel" id="two_behind_com" name="two_behind_ball"><label for="two_behind_com">组选复式</label>
+						<input type="radio" class="smalllabel" id="two_behind_com_enter" name="two_behind_ball"><label for="two_behind_com_enter">组选单式</label>
+					</p>
+					<div class="line"></div>
+					<div id="two_behind_play_ball"></div>
+				</div>
+
+				<div id="one_play" class="tab_content" style="display: none;">
+					<p class="method">
+						<img id="one_help" src="../rs/v1_zc_zhcn/images/qa.png" class="left" title="">
+						<span id="one_example" class="ex" title="">示例</span>
+						<font id="one_desc"></font>
+					</p>
+					<p class="method">
+					<span>  定位胆 </span>
+						<input type="radio" class="smalllabel" id="one_set" name="one_ball"><label for="one_set">定位胆</label>
+					</p>
+					<div class="line"></div>
+					<div id="one_play_ball"></div>
+				</div>
+
+				<div id="noset_play" class="tab_content" style="display: none;">
+					<p class="method">
+						<img id="noset_help" src="../rs/v1_zc_zhcn/images/qa.png" class="left" title="">
+						<span id="noset_example" class="ex" title="">示例</span>
+						<font id="noset_desc"></font>
+					</p>
+						<p class="method">
+					<span>  不定位 </span>
+						<input type="radio" class="smalllabel" id="three_behind_1" name="noset_ball"><label for="three_behind_1">一码不定位</label>
+						<input type="radio" class="smalllabel" id="three_behind_2" name="noset_ball"><label for="three_behind_2">二码不定位</label>
+						</p>
+						<div class="line"></div>
+						<div id="noset_play_ball"></div>
+					</div>
+
+				<div id="bseo_play" class="tab_content" style="display: none;">
+					<p class="method">
+						<img id="bseo_help" src="../rs/v1_zc_zhcn/images/qa.png" class="left" title="">
+						<span id="bseo_example" class="ex" title="">示例</span>
+						<font id="bseo_desc"></font>
+					</p>
+					<p class="method">
+					<span>  大小单双 </span>
+						<input type="radio" class="smalllabel" id="two_front_bseo" name="bseo_ball"><label for="two_front_bseo">前二大小单双</label>
+						<input type="radio" class="smalllabel" id="two_behind_bseo" name="bseo_ball"><label for="two_behind_bseo">后二大小单双</label>
+					</p>
+					<div class="line"></div>
+					<div id="bseo_play_ball"></div>
+				</div>
+
+			</div>
+
+			<div class="tab_content">
+				<table width="100%" class="option" border="0" cellpadding="1" cellspacing="0">
+					<tbody><tr>
+						<td width="87">您选择了<span id="lt_sel_bets" class="w3">0</span> 注</td>
+						<td width="182" rowspan="2">
+						<p class="left">输入倍数：</p>   <p class="switch_options rating">
+							<span class="switch_enable " id="time_add"> <img src="images/keno/plus.png">   </span>
+							<input type="text" name="lt_sel_times" id="lt_sel_times" class="input left textfield6 numeric" value="1" maxlength="4" size="4" onkeyup="comBetMoney()">
+							<span class="switch_enable" id="time_reduce"><img src="images/keno/minus.png">  </span>
+						</p>
+						</td>
+						<td width="158" rowspan="1">	当前模式
+						<ul class="btnType">
+						<li id="yuan" unit="2" class="selected">元</li>
+						<li id="jiao" unit="0.2">角</li>
+						<li id="fen" unit="0.02">分</li>
+						</ul>  </td>
+						<td width="100" rowspan="2">
+							<a href="javascript:void(0);" onclick="Bbet.clearSel();Ebet.clearSel();" class="btn_s rechoose"> 重选号码 </a>
+							
+						</td>
+						<td width="100" rowspan="2">	
+                        <a id="randomOne" href="javascript:void(0);" class="btn_s rechoose" onclick="Bbet.randomOne(3,true,'1_1_1');" style="display: block;"> 随机一注 </a>
+						</td>
+                        <td width="100">共 <span id="lt_sel_money" class="w3">2000.00</span>元 </td>
+					</tr>
+				</tbody></table>
+			</div>
+            
+		</div><!--玩法-->
+      </div><!--選號區END-->
+      <div class="mmc_btnbox">
+            	<div class="mmc_go"></div>
+                <div class="mmc_add"></div>
+            </div>
+      <div class="mmc_list">
+          <div class="mmc_listbox">
+                    <div class="mmc_table " >
+                      <table id="lt_bt_content" width="100%" border="0" cellpadding="5" cellspacing="0" class="center">
+                        <tbody>
+                          <tr class="list_font" height="32">
+                            <td>三星直选_复式</td>
+                            <td valign="middle" title="7|1|8">7|1|8</td>
+                            <td align="center" valign="middle">[元]</td>
+                            <td align="center" valign="middle">1注</td>
+                            <td align="center" valign="middle">1倍</td>
+                            <td align="center" valign="middle">¥2.00</td>
+                            <td class="list_cursor" onclick="delRowBet(this)" width="30" align="center" valign="middle"> <img src="images/mmc_delete.png"></td>
+                            </tr>
+                          <tr class="list_font" height="32">
+                            <td>三星直选_复式</td>
+                            <td valign="middle" title="7|1|8">7|1|8</td>
+                            <td align="center" valign="middle">[元]</td>
+                            <td align="center" valign="middle">1注</td>
+                            <td align="center" valign="middle">1倍</td>
+                            <td align="center" valign="middle">¥2.00</td>
+                            <td class="list_cursor" onclick="delRowBet(this)" width="30" align="center" valign="middle"><img src="images/mmc_delete.png"></td>
+                            </tr>
+                          <tr class="list_font" height="32">
+                            <td>三星直选_复式</td>
+                            <td valign="middle" title="7|1|8">7|1|8</td>
+                            <td align="center" valign="middle">[元]</td>
+                            <td align="center" valign="middle">1注</td>
+                            <td align="center" valign="middle">1倍</td>
+                            <td align="center" valign="middle">¥2.00</td>
+                            <td class="list_cursor" onclick="delRowBet(this)" width="30" align="center" valign="middle"><img src="images/mmc_delete.png"></td>
+                            </tr>
+                          <tr class="list_font" height="32">
+                            <td>三星直选_复式</td>
+                            <td valign="middle" title="7|1|8">7|1|8</td>
+                            <td align="center" valign="middle">[元]</td>
+                            <td align="center" valign="middle">1注</td>
+                            <td align="center" valign="middle">1倍</td>
+                            <td align="center" valign="middle">¥2.00</td>
+                            <td class="list_cursor" onclick="delRowBet(this)" width="30" align="center" valign="middle"><img src="images/mmc_delete.png"></td>
+                            </tr>
+                            <tr class="list_font" height="32">
+                            <td>三星直选_复式</td>
+                            <td valign="middle" title="7|1|8">7|1|8</td>
+                            <td align="center" valign="middle">[元]</td>
+                            <td align="center" valign="middle">1注</td>
+                            <td align="center" valign="middle">1倍</td>
+                            <td align="center" valign="middle">¥2.00</td>
+                            <td class="list_cursor" onclick="delRowBet(this)" width="30" align="center" valign="middle"><img src="images/mmc_delete.png"></td>
+                            </tr>
+                            <tr class="list_font" height="32">
+                            <td>三星直选_复式</td>
+                            <td valign="middle" title="7|1|8">7|1|8</td>
+                            <td align="center" valign="middle">[元]</td>
+                            <td align="center" valign="middle">1注</td>
+                            <td align="center" valign="middle">1倍</td>
+                            <td align="center" valign="middle">¥2.00</td>
+                            <td class="list_cursor" onclick="delRowBet(this)" width="30" align="center" valign="middle"><img src="images/mmc_delete.png"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                    <p class="right">  总金额 <span class="w3" id="lt_cf_money">2000.00</span> 元  </p>
+                    <p class="right">总注数 <font id="lt_cf_bets">6</font> 注 </p>
+                    
+                </div>
+      </div>
+    </div><!--mmc end-->
+</div>
+</body>
+</html>

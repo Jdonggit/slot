@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>mmc</title>
+<link href="mmc_style.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../rs/js/jquery.min.js"></script>
+<script type="text/javascript" src="../rs/js/jquery-ui.min.js"></script>
+<link href="../rs/js/jquery-ui.min.css" rel="Stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="mmc_wrapper">
+<!--mmc-->
+    <div class="mmc">
+    <!--開講頭-->
+      <div class="header">
+      		<div class="mmc_pond">192,156,000</div><!--獎池-->
+            <div id="box">
+                    <ul class="inbox">
+                      <li><img src="images/mmc_1.png"></li>
+                    </ul>
+                    <ul class="inbox">
+                      <li><img src="images/mmc_5.png"></li>
+                    </ul>
+                    <ul class="inbox">
+                      <li><img src="images/mmc_6.png"></li>
+                    </ul>
+                    <ul class="inbox">
+                      <li><img src="images/mmc_8.png"></li>
+                    </ul>
+                    <ul class="inbox">
+                      <li><img src="images/mmc_3.png"></li>
+                    </ul>
+              </div>
+              <label class="switch" style="float:left;margin-top: 97px;margin-left: 30px;"><!--音樂開關-->
+                <input type="checkbox" class="switch-input">
+                <span class="switch-label" data-on="On" data-off="Off"></span>
+                <span class="switch-handle"></span>
+            </label>
+        </div>
+        <!--開講頭end-->
+      <div class="mmc_tab"><!--選號區-->
+          <div class="tabs_container">
+                    <a class="pre" style="display: none;"> </a>
+                    <ul class="tabs">
+                        <li class="active"><a id="three_front" href="#three_front_play">三星</a></li>
+                        <li><a id="two_front" href="#two_front_play">前二</a></li>
+                        <li><a id="two_behind" href="#two_behind_play">后二</a></li>
+                        <li><a id="one" href="#one_play">一星</a></li>
+                        <li><a id="noset" href="#noset_play">不定位</a></li>
+                        <li><a id="bseo" href="#bseo_play">大小单双</a></li>
+                    </ul>
+                    <a class="next" style="display: none;"> </a>
+            </div>
+            
+            <div class="keno_R"><!--玩法-->
+			<div class="tab_container">
+					
+				<div id="three_front_play" class="tab_content" style="display: block;">
+                <div class="bg_red">
+                        <p class="method">
+                            <img id="three_front_help" src="images/qa.png" class="left" title="从百位丶十位丶个位中选择一个3位数号码组成一注，所选号码与开奖号码后3位相同，且顺序一致，即为中奖。">
+                            <span id="three_front_example" class="ex" title="投注方案：345；开奖号码：345，即中后三直选。">示例</span>
+                            <font id="three_front_desc">从个丶十丶百位各选一个号码组成一注。</font>
+                        </p>
+                        <p class="method">
+                            <span>  三星直选 </span>
+                            <input type="radio" class="smalllabel" id="three_front_set" name="three_front_ball" checked="checked"><label for="three_front_set">直选复式</label>
+                            <input type="radio" class="smalllabel" id="three_front_enter" name="three_front_ball"><label for="three_front_enter">直选单式</label>
+                            <input type="radio" class="smalllabel" id="three_front_sum" name="three_front_ball"><label for="three_front_sum">直选和值</label>
+                        </p>
+                        <p class="method"><span> 三星组选</span>
+                            <input type="radio" class="smalllabel" id="three_front_com_3" name="three_front_ball"><label for="three_front_com_3">组三复式</label>
+                            <input type="radio" class="smalllabel" id="three_front_com_3_enter" name="three_front_ball"><label for="three_front_com_3_enter">组三单式</label>
+                            <input type="radio" class="smalllabel" id="three_front_com_6" name="three_front_ball"><label for="three_front_com_6">组六复式</label>
+                            <input type="radio" class="smalllabel" id="three_front_com_6_enter" name="three_front_ball"><label for="three_front_com_6_enter">组六单式</label>
+                            <input type="radio" class="smalllabel" id="three_front_com_mix" name="three_front_ball"><label for="three_front_com_mix">混合组选</label>
+                            <input type="radio" class="smalllabel" id="three_front_com_sum" name="three_front_ball"><label for="three_front_com_sum">组选和值</label>
+                        </p>
+                 </div>
+					<div id="three_front_play_ball" class="bg_red"></div>
+				</div>
+				<div id="two_front_play" class="tab_content" style="display: none;">
+					<p class="method">
+						<img id="two_front_help" src="images/qa.png" class="left" title="从百位丶十位中选择一个2位数号码组成一注，所选号码与开奖号码的前2位相同，且顺序一致，即为中奖。">
+						<span id="two_front_example" class="ex" title="投注方案：58；开奖号码前二位：58，即中前二直选。">示例</span>
+						<font id="two_front_desc">从百位和十位上至少各选1个号码。</font>
+					</p>
+					<p class="method">
+					<span>  前二直选 </span>
+						<input type="radio" class="smalllabel" id="two_front_set" name="two_front_ball" checked="checked"><label for="two_front_set">直选复式</label>
+						<input type="radio" class="smalllabel" id="two_front_enter" name="two_front_ball"><label for="two_front_enter">直选单式</label>
+					</p>
+					<p class="method"><span> 前二组选</span>
+						<input type="radio" class="smalllabel" id="two_front_com" name="two_front_ball"><label for="two_front_com">组选复式</label>
+						<input type="radio" class="smalllabel" id="two_front_com_enter" name="two_front_ball"><label for="two_front_com_enter">组选单式</label>
+					</p>
+					<div class="line"></div>
+					<div id="two_front_play_ball"></div>
+				</div>
+				<div id="two_behind_play" class="tab_content" style="display: none;">
+					<p class="method">
+						<img id="two_behind_help" src="images/qa.png" class="left" title="">
+						<span id="two_behind_example" class="ex" title="">示例</span>
+						<font id="two_behind_desc"></font>
+					</p>
+					<p class="method">
+					<span>  后二直选 </span>
+						<input type="radio" class="smalllabel" id="two_behind_set" name="two_behind_ball"><label for="two_behind_set">直选复式</label>
+						<input type="radio" class="smalllabel" id="two_behind_enter" name="two_behind_ball"><label for="two_behind_enter">直选单式</label>
+					</p>
+					<p class="method"><span> 后二组选</span>
+						<input type="radio" class="smalllabel" id="two_behind_com" name="two_behind_ball"><label for="two_behind_com">组选复式</label>
+						<input type="radio" class="smalllabel" id="two_behind_com_enter" name="two_behind_ball"><label for="two_behind_com_enter">组选单式</label>
+					</p>
+					<div class="line"></div>
+					<div id="two_behind_play_ball"></div>
+				</div>
+
+				<div id="one_play" class="tab_content" style="display: none;">
+					<p class="method">
+						<img id="one_help" src="images/qa.png" class="left" title="">
+						<span id="one_example" class="ex" title="">示例</span>
+						<font id="one_desc"></font>
+					</p>
+					<p class="method">
+					<span>  定位胆 </span>
+						<input type="radio" class="smalllabel" id="one_set" name="one_ball"><label for="one_set">定位胆</label>
+					</p>
+					<div class="line"></div>
+					<div id="one_play_ball"></div>
+				</div>
+
+				<div id="noset_play" class="tab_content" style="display: none;">
+					<p class="method">
+						<img id="noset_help" src="images/qa.png" class="left" title="">
+						<span id="noset_example" class="ex" title="">示例</span>
+						<font id="noset_desc"></font>
+					</p>
+						<p class="method">
+					<span>  不定位 </span>
+						<input type="radio" class="smalllabel" id="three_front_1" name="noset_ball"><label for="three_front_1">一码不定位</label>
+						<input type="radio" class="smalllabel" id="three_front_2" name="noset_ball"><label for="three_front_2">二码不定位</label>
+						</p>
+						<div class="line"></div>
+						<div id="noset_play_ball"></div>
+					</div>
+
+				<div id="bseo_play" class="tab_content" style="display: none;">
+					<p class="method">
+						<img id="bseo_help" src="images/qa.png" class="left" title="">
+						<span id="bseo_example" class="ex" title="">示例</span>
+						<font id="bseo_desc"></font>
+					</p>
+					<p class="method">
+					<span>  大小单双 </span>
+						<input type="radio" class="smalllabel" id="two_front_bseo" name="bseo_ball"><label for="two_front_bseo">前二大小单双</label>
+						<input type="radio" class="smalllabel" id="two_behind_bseo" name="bseo_ball"><label for="two_behind_bseo">后二大小单双</label>
+					</p>
+					<div class="line"></div>
+					<div id="bseo_play_ball"></div>
+				</div>
+
+			</div>
+
+			<div class="tab_content">
+				<table width="100%" class="option" border="0" cellpadding="1" cellspacing="0">
+					<tbody><tr>
+						<td width="117">您选择了<span id="lt_sel_bets" class="w3">1000</span> 注</td>
+						<td width="182" rowspan="2">
+						<p class="left">输入倍数：</p>   <p class="switch_options rating">
+							<span class="switch_enable " id="time_add"> <img src="images/keno/plus.png">   </span>
+							<input type="text" name="lt_sel_times" id="lt_sel_times" class="input left textfield6 numeric" value="1" maxlength="4" size="4" onkeyup="comBetMoney()">
+							<span class="switch_enable" id="time_reduce"><img src="images/keno/minus.png">  </span>
+						</p>
+						</td>
+						<td width="168" rowspan="1">	当前模式
+						<ul class="btnType">
+						<li id="yuan" unit="1" class="selected">元</li>
+						<li id="jiao" unit="0.1">角</li>
+						<li id="fen" unit="0.01">分</li>
+						</ul>  </td>
+						<td width="85" rowspan="2">
+							<a href="javascript:void(0);" onclick="Bbet.clearSel();Ebet.clearSel();" class="btn_s rechoose"> 重选号码 </a>
+							
+						</td>
+						<td width="85" rowspan="2">	
+                        <a id="randomOne" href="javascript:void(0);" class="btn_s rechoose" onclick="Bbet.randomOne(3,true,'1_1_1');" style="display: block;"> 随机一注 </a>
+						</td>
+                        <td width="90">共 <span id="lt_sel_money" class="w3">0.000</span>元 </td>
+					</tr>
+				</tbody></table>
+			</div>
+            
+		</div><!--玩法END-->
+      </div><!--選號區END-->
+      <div class="mmc_btnbox"><!--按鈕-->
+            	<!--<div class="mmc_go"></div>
+                <div class="mmc_add"></div>-->
+				<a href="javascript:void(0);" onclick="closeChase();sendBet();" class="mmc_go"></a>
+				<a href="javascript:void(0);" onclick="showSelBet();beginTimes();" class="mmc_add"></a>
+      </div><!--按鈕END-->
+      <div class="mmc_list"><!--下注清單-->
+          <div class="mmc_listbox">
+                    <div class="scrollbar" id="style-2">
+      					<div class="force-overflow">
+                     <table id="lt_bt_content" width="100%" border="0" cellpadding="5" cellspacing="0" class="center">
+					</table>
+                    </div>
+                    </div>
+                    <p class="right">  总金额 <span class="w3" id="lt_cf_money">0.00</span> 元  </p>
+                    <p class="right">总注数 <font id="lt_cf_bets">6</font> 注 </p>    
+                </div>
+        		<div class="mmc_check">
+                  <div class="mmc_start"></div>
+                  <div class="mmc_again"><a href="javascript:void(0);" onclick="sendBet();"></a></div>
+				  
+                </div>
+      </div><!--下注清單 END-->
+    </div><!--mmc end-->
+</div>
+<script type="text/javascript" src="/rs/js/jquery.jSlots.js"></script>
+<script type="text/javascript" src="/rs/js/jquery.form.js"></script>
+<script language="javascript" src="./js/pub.js"></script>
+<script language="javascript" src="./js/com_v1.js"></script>
+
+<script language="javascript" src="./js/comFun.js"></script>
+<script language="javascript" src="./js/showBall.js"></script>
+<script language="javascript" src="./js/showEnter.js"></script>
+<script language="javascript" src="./js/showList.js"></script>
+<script language="javascript" src="./js/showChase.js"></script>
+<script type="text/javascript">
+var theme = "v1";
+var sel_play = "";
+var Casino = "12";
+var Ctype = "DD3";
+var Code;
+var Ratio = 0;
+var Tab = "";
+var Analye;
+var BaseRatio=new Array();
+var dialog;
+var slotAudio;
+var timerAudio;
+var readyAudio;
+	var Ratio=new Array();
+			Ratio[5001] = 1700;
+			Ratio[5002] = 1700;
+			Ratio[5003] = 1700;
+			Ratio[5004] = 566.667;
+			Ratio[5005] = 566.667;
+			Ratio[5006] = 283.34;
+			Ratio[5007] = 283.34;
+			Ratio[5008] = 566.667;
+			Ratio[5009] = 569.5;
+			Ratio[5010] = 170;
+			Ratio[5011] = 170;
+			Ratio[5012] = 170;
+			Ratio[5013] = 170;
+			Ratio[5014] = 85;
+			Ratio[5015] = 85;
+			Ratio[5016] = 85;
+			Ratio[5017] = 85;
+			Ratio[5018] = 17;
+			Ratio[5019] = 6.42;
+			Ratio[5020] = 30.9778;
+			Ratio[5021] = 6.8;
+			Ratio[5022] = 6.8;
+		BaseRatio.push(Ratio);
+
+var BaseWater=new Array();
+	var Water=new Array();
+			Water[5001] = 11;
+			Water[5002] = 11;
+			Water[5003] = 11;
+			Water[5004] = 11;
+			Water[5005] = 11;
+			Water[5006] = 11;
+			Water[5007] = 11;
+			Water[5008] = 11;
+			Water[5009] = 11;
+			Water[5010] = 11;
+			Water[5011] = 11;
+			Water[5012] = 11;
+			Water[5013] = 11;
+			Water[5014] = 11;
+			Water[5015] = 11;
+			Water[5016] = 11;
+			Water[5017] = 11;
+			Water[5018] = 11;
+			Water[5019] = 11;
+			Water[5020] = 11;
+			Water[5021] = 11;
+			Water[5022] = 11;
+		BaseWater.push(Water);
+var nowSn = "2016562";
+var rsSn = "2016450";
+
+$(document).ready(function(){
+
+	var ct = 8468;
+	if(ct==0) dd();
+	else{
+		var ts = (new Date()).getTime() + ct*1000;
+		countdown(ts);
+	}
+	setCoin(2);
+	$(".btnType li").click(function(){
+		$(".btnType li").removeClass("selected");
+		$(this).addClass("selected");
+		var coin = $(this).attr('id');
+		setCookie("coin", coin, 30);
+		comBetMoney();
+	});
+	$(".switch_atype span").click(function(){
+		$(".switch_atype span").removeClass("selected");
+		$(this).addClass("selected");
+	});
+
+
+});
+
+</script>
+</body>
+</html>
