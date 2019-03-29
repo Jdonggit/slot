@@ -199,12 +199,7 @@ function slotRs(rs)
 				onStart : function() {
 					console.log('start');
 					sound = $(".switch-input").prop("checked");
-					if(sound != false)
-					{
-						slotAudio.load(slotAudio.mp3);
-						slotAudio.play();
-					}
-					
+				
 					document.getElementById("goon").style.pointerEvents = "none";
 					var count=0;
 					var factor = 1;
@@ -227,11 +222,6 @@ function slotRs(rs)
 					document.getElementById("goon").style.pointerEvents = "";
 					$(".pop-modal").css('display', 'block');
 					var sound = $(".switch-input").prop("checked");
-					if(sound != false)
-					{
-						timerAudio.load(timerAudio.mp3);
-						timerAudio.play();
-					}
 				
 					getBeforeGame();
 					clear();

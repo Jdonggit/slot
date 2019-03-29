@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.30, created on 2019-03-29 15:05:41
+  from "C:\xampp\htdocs\slot\templates\mmc.tpl" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5c9e26359af3c4_74151665',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '7bbd96d532cae469cc65952c3e7c4f54adb3e634' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\slot\\templates\\mmc.tpl',
+      1 => 1553868340,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5c9e26359af3c4_74151665 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -7,12 +31,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <link href="style.css" rel="stylesheet" type="text/css" />
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script type="text/javascript" src="/mmc/js/audiojs/audio.min.js"></script>
-<script
+<?php echo '<script'; ?>
+ src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ type="text/javascript" src="/mmc/js/audiojs/audio.min.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+
   src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
   integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"><?php echo '</script'; ?>
+>
 <!-- <link href="../rs/js/jquery-ui.min.css" rel="Stylesheet" type="text/css"> -->
 
 
@@ -339,28 +369,63 @@
 	<audio src="./rs/sound/Cartoon.mp3" preload="auto" ></audio>
 	<audio src="./rs/sound/firework.mp3" preload="auto" loop="loop"></audio>
 </div>
-<script type="text/javascript" src="./js/jquery.jSlots.js"></script>
-<!-- <script type="text/javascript" src="/rs/js/jquery.form.js"></script> -->
+<?php echo '<script'; ?>
+ type="text/javascript" src="./js/jquery.jSlots.js"><?php echo '</script'; ?>
+>
+<!-- <?php echo '<script'; ?>
+ type="text/javascript" src="/rs/js/jquery.form.js"><?php echo '</script'; ?>
+> -->
 <!--Special effects-->
-<script language="javascript" src="./js/firework.js"></script>
-<script language="javascript" src="./js/bubble.js"></script>
-<script language="javascript" src="./js/light_ball.js"></script>
-<!-- <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-<script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script> -->
+<?php echo '<script'; ?>
+ language="javascript" src="./js/firework.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ language="javascript" src="./js/bubble.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ language="javascript" src="./js/light_ball.js"><?php echo '</script'; ?>
+>
+<!-- <?php echo '<script'; ?>
+ language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"><?php echo '</script'; ?>
+> -->
 <!------------------->
-<script language="javascript" src="./js/countUp.min.js"></script>
-<script language="javascript" src="./js/bouns.js"></script>
-<script language="javascript" src="./js/pub.js"></script>
-<script language="javascript" src="./js/com_v1.js"></script>
-<script language="javascript" src="./js/jquery.easing.1.3.js"></script>
-<script language="javascript" src="./js/comFun.js"></script>
-<script language="javascript" src="./js/showBall.js"></script>
-<script language="javascript" src="./js/showEnter.js"></script>
-<script language="javascript" src="./js/showList.js"></script>
-<script language="javascript" src="./js/showChase.js"></script>
+<?php echo '<script'; ?>
+ language="javascript" src="./js/countUp.min.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ language="javascript" src="./js/bouns.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ language="javascript" src="./js/pub.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ language="javascript" src="./js/com_v1.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ language="javascript" src="./js/jquery.easing.1.3.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ language="javascript" src="./js/comFun.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ language="javascript" src="./js/showBall.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ language="javascript" src="./js/showEnter.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ language="javascript" src="./js/showList.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ language="javascript" src="./js/showChase.js"><?php echo '</script'; ?>
+>
 <!-- START Animation code -->
 
-<script type="text/javascript">
+<?php echo '<script'; ?>
+ type="text/javascript">
 
 $("#light").change(function() {
 	if(this.checked) {
@@ -449,6 +514,9 @@ setInterval( function(){
 } , 3000);
 
 // setTimeout(slotRs(''), 1000);
-</script>
+<?php echo '</script'; ?>
+>
 </body>
 </html>
+<?php }
+}

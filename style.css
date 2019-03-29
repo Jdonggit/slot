@@ -27,7 +27,7 @@ acronym:after { content: " (" attr(title) ")"; } /* 列印時自動展開成全�
 pre,code,address,caption,cite,code,em,strong {}
 
 body {background:url(../images/background.jpg) #fff center  fixed ;background-size: cover;-moz-background-size:cover;font-family:"微軟正黑體";
-color:#333;font-size:16px;overflow-x:hidden;line-height: 1.2em;}
+color:#333;font-size:16px;overflow-x:hidden;line-height: 1.2em;    height: 100%;}
 
 /* LAYOUT CLASS
 --------------------------------------------------- */
